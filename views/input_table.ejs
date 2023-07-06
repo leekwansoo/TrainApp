@@ -13,43 +13,37 @@
   <body>
     <%- include('nav.html') %>
     
-    <h3>입력 양식</h3>
+    <h3>오늘의 운동량</h3>
 
     <div class="container mt-3">
         <form action="/train" method="POST">
-          <div class="form-group">
-            <label>푸시업</label>
-            <input type="int" class="form-control" name="pushup">
-          </div>
-          <div class="form-group">
-            <label>배운동</label>
-            <input type="int" class="form-control" name="stomach">
-          </div>
-          <div class="form-group">
-            <label>벽스퀏</label>
-            <input type="int" class="form-control" name="squat">
-          </div>
-          <div class="form-group">
-            <label>팔운동</label>
-            <input type="int" class="form-control" name="arm">
-          </div>
-          <div class="form-group">
-            <label>상체들기</label>
-            <input type="int" class="form-control" name="uplift">
-          </div>
-          <div class="form-group">
-            <label>뒷꿈치들기</label>
-            <input type="int" class="form-control" name="upheel">
-          </div>
-          <div class="form-group">
-            <label>의자앉아발차기</label>
-            <input type="int" class="form-control" name="kick_on_chair">
-          </div>
-          <div class="form-group">
-            <label>두무릎벌리기</label>
-            <input type="int" class="form-control" name="spreading_thigh">
-          </div>
-          <button type="submit" class="btn btn-danger">Submit</button>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th class="text-center">푸시엎</th>
+                <th class="text-center">배운동</th>
+                <th class="text-center">벽스퀏</th>
+                <th class="text-center">팔운동</th>
+                <th class="text-center">상체들기</th>
+                <th class="text-center">뒷꿈치들기</th>
+                <th class="text-center">의자발차기</th>
+                <th class="text-center">무릎벌리기</th>
+            </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="int" class="form-control" name="pushup"></td>
+                <td><input type="int" class="form-control" name="stomach"></td>
+                <td><input type="int" class="form-control" name="squat"></td>
+                <td><input type="int" class="form-control" name="arm"></td>
+                <td><input type="int" class="form-control" name="uplift"></td>
+                <td><input type="int" class="form-control" name="upheel"></td>
+                <td><input type="int" class="form-control" name="kick_on_chair"></td>
+                <td><input type="int" class="form-control" name="spreading_thigh"></td>
+              </tr>
+            </tbody>
+          </table>
+          <button type="submit" class="btn btn-danger">제출</button>
         </form>
       </div>
       
